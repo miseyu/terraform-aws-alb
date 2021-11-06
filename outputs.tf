@@ -1,5 +1,5 @@
 output "alb_name" {
-  description = "The ARN suffix of the ALB"
+  description = "The name of the ALB"
   value       = join("", aws_lb.default.*.name)
 }
 
